@@ -207,14 +207,14 @@
 #         return [mylist[0]] * mylist[1] + encoding(mylist[2:])
 # print(encoding(['A', 12, 'B', 4,'A', 6, 'B', 1]))
 
-def encoding(mylist, count = 1):
-   if len(mylist) == mylist.count(mylist[0]):
-      return [mylist[0], len(mylist)]
-   if mylist[0] == mylist[1]:
-      return encoding(mylist[1:], count + 1)
-   else:
-      return [mylist[0], count] + encoding(mylist[1:], count= 1)
-print(encoding(['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'A', 'A', 'A', 'A', 'A', 'A', 'B']))
+# def encoding(mylist, count = 1):
+#    if len(mylist) == mylist.count(mylist[0]):
+#       return [mylist[0], len(mylist)]
+#    if mylist[0] == mylist[1]:
+#       return encoding(mylist[1:], count + 1)
+#    else:
+#       return [mylist[0], count] + encoding(mylist[1:], count= 1)
+# print(encoding(['A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'A', 'B', 'B', 'B', 'B', 'A', 'A', 'A', 'A', 'A', 'A', 'B']))
 
 
 
